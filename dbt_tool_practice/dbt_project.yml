@@ -35,4 +35,4 @@ models:
   dbt_amogh_learn:
       # Applies to all files under models/example/
       example:
-          materialized: view
+          materialized: table

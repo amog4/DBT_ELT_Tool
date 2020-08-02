@@ -29,3 +29,13 @@ models:
           tests:
             - unique
             - not_null
+
+
+    - name: snowflake_datefile
+      description: "This is the for dates"
+      columns:
+        - name: d_date
+          tests:
+            - unique
+            - not_null
+
