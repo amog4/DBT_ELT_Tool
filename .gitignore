@@ -136,3 +136,4 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+/dbt_elt_tool/
