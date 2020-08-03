@@ -10,6 +10,9 @@ models:
             tests:
                 - unique
                 - not_null
+                - accepted_values:
+                    values: [1,2]
+                    quote: False
 
     - name: my_second_dbt_model
       description: "A starter dbt model"
@@ -31,11 +34,5 @@ models:
             - not_null
 
 
-    - name: snowflake_datefile
-      description: "This is the for dates"
-      columns:
-        - name: d_date
-          tests:
-            - unique
-            - not_null
+
 

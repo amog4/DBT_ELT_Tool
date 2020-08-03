@@ -7,17 +7,19 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='ephemeral') }}
+{{ config(materialized='table', alias='first_model') }}
 
 with source_data as (
 
     select 1 as id
     union all
     select null as id
+    union all
+    select 3 as id
 
 )
 
-select *
+select *, {{ var("my_first_variable") }} as first_variable
 from source_data
 
 /*
