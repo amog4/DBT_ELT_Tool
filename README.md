@@ -12,7 +12,7 @@
      *profiles.yml (add the database configurations)
        * dbt debug in cmd 
   * Add sql files in models in the project folder and add to schema.yml 
-   * dbt run
+    * dbt run
   
   
   
