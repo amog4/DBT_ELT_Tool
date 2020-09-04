@@ -1,0 +1,29 @@
+
+# For more information on how to configure this file, please see:
+# https://docs.getdbt.com/docs/profile
+
+amogh_dbt_practice:
+  outputs:
+    dev:
+      type: snowflake
+      account : na34792.ap-south-1
+      warehouse : WAREHOUSE_HW
+      threads: 1
+      #host: 127.0.0.1
+      #port: 5439
+      user: transform_user
+      password: trans123
+      role: transform_user
+      database: analytics
+      schema: dbtt
+      client_session_keep_alive: False
+    prod:
+      type: redshift
+      threads: 1
+      host: 127.0.0.1
+      port: 5439
+      user: alice
+      pass: pa55word
+      dbname: warehouse
+      schema: analytics
+  target: dev

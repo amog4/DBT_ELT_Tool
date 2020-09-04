@@ -1,8 +1,8 @@
-{{ config(materialized='incremental' , unique_key = 'd_date') }}
+{{ config(materialized='incremental' , unique_key = 'd_date',tags='first') }}
 
 
 select *   from "SNOWFLAKE_SAMPLE_DATA"."TPCDS_SF100TCL"."DATE_DIM"
-where d_date <= current_date
+where d_date <=  current_date
 
 
 {% if is_incremental() %}
