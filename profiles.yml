@@ -2,7 +2,7 @@
 # For more information on how to configure this file, please see:
 # https://docs.getdbt.com/docs/profile
 
-amogh_dbt_practice:
+dbt_practice:
   outputs:
     dev:
       type: snowflake

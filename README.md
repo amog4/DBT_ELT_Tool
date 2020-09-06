@@ -13,6 +13,10 @@
        * dbt debug in cmd 
   * Add sql files in models in the project folder and add to schema.yml 
     * dbt run
+    
+  * Add the data warehouse properties in profiles file
+  
+  * To run airflow add the paths in config yml file
   
   
   

@@ -1,8 +1,9 @@
 esop_dbt:
   active: True
-  profiles_dir: /DBT_ELT_Tool/
+  profiles_dir: 
   target: dev
   full_refresh: True
   models: None
   dbt_bin: False
-  dir: /DBT_ELT_Tool/dbt_tool_practice/
+  dir:
+  manifest:

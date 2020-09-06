@@ -22,7 +22,7 @@ args = {
 }
 	
 
-with open('config_esop_dbt.yml','rb') as f:
+with open('config_dbt.yml','rb') as f:
     doc = yaml.load(f,Loader=yaml.FullLoader)
 
 for ke , v in doc.items():
@@ -31,7 +31,7 @@ for ke , v in doc.items():
     
 
 
-json_manifest_file = 'manifest.json'
+json_manifest_file = v['manifest']
 
 
 
