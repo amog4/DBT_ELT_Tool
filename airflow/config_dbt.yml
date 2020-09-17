@@ -1,4 +1,4 @@
-esop_dbt:
+dbt:
   active: True
   profiles_dir: 
   target: dev
